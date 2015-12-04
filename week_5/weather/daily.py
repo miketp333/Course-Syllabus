@@ -9,7 +9,7 @@ def forecast():
     """
     Returns the daily weather for Berkeley, CA
     """
-    response = urlopen('http://api.openweathermap.org/data/2.5/forecast/daily?q=Berkeley&mode=json&units=Imperial&cnt=1')
+    response = urlopen('http://api.openweathermap.org/data/2.5/forecast/daily?q=Berkeley&mode=json&units=Imperial&cnt=1&appid=7dc34849d7e8b6fbdcb3f12454c92e88')
     rawWeatherData = response.read().decode("utf-8")
     weatherData = json.loads(rawWeatherData)
 
